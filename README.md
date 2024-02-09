@@ -13,7 +13,7 @@ This version passed black, mypy and flake8.
 GUI PyQt version.
 
 Requires PyQt6.
-This version was creating using the Qt Designer 6.4.3.
+This version was created using the Qt Designer 6.4.3.
 
 For this reason, this version got no black, mypy nor flake8, as 
 in general the PyQt convention totally breaks the general Python 
