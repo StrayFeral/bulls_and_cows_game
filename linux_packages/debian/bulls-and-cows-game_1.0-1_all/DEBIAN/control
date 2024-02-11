@@ -1,0 +1,13 @@
+Package: bulls-and-cows-game
+Version: 1.0-1
+Depends: python3:any
+Section: games
+Priority: optional
+Architecture: all
+Installed-Size: 5362
+Maintainer: Evgueni Antonov <Evgueni.Antonov@gmail.com>
+Description: Bulls and Cows classic game (command-line version)
+ This is a small Python implementation of the classic Bulls and Cows
+ game in a command-line version.
+ .
+ There is also a graphical (QT) version: bulls-and-cows-game-qt

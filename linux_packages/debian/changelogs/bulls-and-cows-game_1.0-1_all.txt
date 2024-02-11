@@ -1,0 +1,5 @@
+bulls-and-cows-game (1.0-1) UNRELEASED; urgency=low
+
+  * Initial release.
+
+ -- Evgueni Antonov <Evgueni.Antonov@gmail.com>  Sun, 11 Feb 2024 19:19:00 +0200
