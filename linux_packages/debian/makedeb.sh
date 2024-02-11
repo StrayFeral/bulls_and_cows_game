@@ -73,7 +73,7 @@ sudo dpkg-deb --build $pkg
 echo "------------------------------------------------[ LINTIAN OUTPUT"
 
 lintian "$pkg.deb"
-mv "$pkg.deb" DEBPACKAGES/
+mv -f "$pkg.deb" DEBPACKAGES/
 
 echo ""
 echo "Done."

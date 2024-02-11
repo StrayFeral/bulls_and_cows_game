@@ -3,6 +3,7 @@ Version: 1.0-1
 Depends: python3:any
 Section: games
 Priority: optional
+Homepage: https://github.com/StrayFeral/bulls_and_cows_game
 Architecture: all
 Installed-Size: 5362
 Maintainer: Evgueni Antonov <Evgueni.Antonov@gmail.com>
