@@ -1,0 +1,28 @@
+TROUBLESHOOTING
+=======================================================================
+Common problems.
+
+ERROR: Python module PyQt6 is not installed.
+--------------------------------------------
+This application makes use of the Python3 module PyQt6.
+
+HOW TO INSTALL IT (LINUX):
+
+You should first check if python3-pyqt6 package exists in your linux
+distribution repositories and install it from there, such as:
+
+apt install python3-pyqt6
+(for Debian/Ubuntu/Lubuntu users)
+
+for a system-wide availability. However as of today (2024-02-11) this
+package is not yet available in the Debian repositories for 22.04 LTS
+and I heard word it would be available probably in April 2024.
+
+Another way is to install it only as a python module for the current
+project:
+
+python -m pip venv venv
+source venv/bin/activate
+python -m pip install -r requirements.txt
+
+And finally you can run the application.

@@ -3,6 +3,20 @@
 import sys
 import re
 import random
+
+# And this goes against the Python practices I guess. Problem is
+# I want to make a Debian .deb package, but I am using Lubuntu 22.04 LTS
+# and as of today this package is not yet available in the Debian repos
+# for this version, so I put this here at least to be user-friendly to
+# the users
+ERRMSG = """ERROR: Python module PyQt6 is not installed.
+Please read TROUBLESHOOTING.txt
+(bulls_and_cows_game_qt.py)
+"""
+if "PyQt6" not in sys.modules:
+    print(ERRMSG, file=sys.stderr)
+    sys.exit(1)
+
 from PyQt6 import QtCore, QtGui, QtWidgets
 from game_layout import Ui_MainWindow
 from help_about import Ui_DialogHelpAboutBC
