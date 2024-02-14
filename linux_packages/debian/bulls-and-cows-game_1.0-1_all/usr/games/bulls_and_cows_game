@@ -11,7 +11,7 @@ class Credits:
     AUTHOR: str = "Evgueni Antonov"
     DATE: str = "2024-02-06"
     VERSION: str = "1.0"
-    APPURL: str = "https://github.com/StrayFeral/python_exercises"
+    APPURL: str = "https://github.com/StrayFeral/bulls_and_cows_game"
     AUTHORMAIL: str = "Evgueni.Antonov@gmail.com"
 
     def __repr__(self) -> str:
