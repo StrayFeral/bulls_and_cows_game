@@ -2,7 +2,9 @@
 Command-line and PyQt implementation of the classic "Bulls and Cows" game (yes, that same old game we all played in high-school with pen and paper).
 
 
-## COMMAND-LINE VERSION
+## COMMAND-LINE VERSION ONLY
+This is if you want to download only the command-line version, because installing the QT version will install both versions.
+
 Taken directly as is from my python_exercises repository, but I still 
 left it there too to keep the commit history.  
 This version passed black, mypy and flake8.
