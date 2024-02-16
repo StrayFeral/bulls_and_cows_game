@@ -10,7 +10,7 @@ left it there too to keep the commit history.
 This version passed black, mypy and flake8.
 
 ### INSTALLATION AND RUNNING
-#### LINUX: Debian, Ubuntu, Mint or any other Debian derivative
+#### INSTALLING ON LINUX: Debian, Ubuntu, Mint or any other Debian derivative
 1. Download the latest DEB package from here
 [https://github.com/StrayFeral/bulls_and_cows_game/tree/main/linux_packages/debian/DEBPACKAGES](https://github.com/StrayFeral/bulls_and_cows_game/tree/main/linux_packages/debian/DEBPACKAGES)
 
@@ -40,8 +40,8 @@ For this reason, this version passed no black, mypy nor flake8, as
 in general the PyQt convention totally breaks the general Python 
 styleguide conventions.
 
-### INSTALLATION
-#### LINUX: Debian, Ubuntu, Mint or any other Debian derivative
+### INSTALLATION AND RUNNING
+#### INSTALLING ON LINUX: Debian, Ubuntu, Mint or any other Debian derivative
 DEB package is not yet available - will be available after April 2024.
 
 #### INSTALLATION FROM SOURCE
@@ -52,5 +52,5 @@ DEB package is not yet available - will be available after April 2024.
 `source venv/bin/activate
 python -m pip install -r requirements.txt`
 
-Now just run  
+#### RUN THE GAME FROM SOURCE
 `./bulls_and_cows_game_qt.py`
