@@ -44,6 +44,12 @@ styleguide conventions.
 #### INSTALLING ON LINUX: Debian, Ubuntu, Mint or any other Debian derivative
 DEB package is not yet available - will be available after April 2024.
 
+#### INSTALLING DEPENDENCIES
+
+```bash
+sudo apt install python3-pyqt6
+```
+
 #### INSTALLATION FROM SOURCE
 1. Download the code. If you don't have git, just download it as a .zip  
 `git clone https://github.com/StrayFeral/bulls_and_cows_game.git`
