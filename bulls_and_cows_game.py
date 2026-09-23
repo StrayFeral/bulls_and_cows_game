@@ -2,8 +2,8 @@
 
 # Normally these classes would have been all in separate files.
 
-import re
 import random
+import re
 
 
 class Credits:

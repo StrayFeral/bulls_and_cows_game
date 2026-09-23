@@ -13,11 +13,12 @@ ERRMSG = """ERROR: Python module PyQt6 is not installed.
 Please read TROUBLESHOOTING.txt
 (bulls_and_cows_game_qt.py)
 """
-if "PyQt6" not in sys.modules:
+try:
+    from PyQt6 import QtCore, QtGui, QtWidgets
+except ImportError:
     print(ERRMSG, file=sys.stderr)
     sys.exit(1)
 
-from PyQt6 import QtCore, QtGui, QtWidgets
 from game_layout import Ui_MainWindow
 from help_about import Ui_DialogHelpAboutBC
 
