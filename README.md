@@ -1,4 +1,7 @@
 # BULLS AND COWS GAME
+
+![Screenshot](screenshots/thumbnail.jpg)
+
 Terminal and PyQt implementations of the classic "Bulls and Cows" game (yes, that same old game we all played in high-school with pen and paper).
 
 ## DEPENDENCIES
