@@ -1,11 +1,15 @@
-name: Build Debian Packages
+name: Build and Release Debian Packages
 
 on:
   push:
     branches: [ "main", "master" ]
+    tags: [ "v*" ] # Triggers release build on version tags (e.g., v1.0-1)
   pull_request:
     branches: [ "main", "master" ]
   workflow_dispatch:
+
+permissions:
+  contents: write # Needed to create GitHub Releases
 
 jobs:
   build-deb:
@@ -32,18 +36,25 @@ jobs:
 
       - name: Run Lintian Checks
         run: |
-          # Audit the generated packages in the parent directory
-          lintian --pedantic ../*.deb
+          # Fails the build if any errors (E:) are found
+          lintian --fail-on error --pedantic ../*.deb
 
       - name: Organize Artifacts
         run: |
           mkdir -p dist
           cp ../*.deb dist/
 
-      - name: Upload Debian Package Artifacts
+      - name: Upload CI Artifacts
         uses: actions/upload-artifact@v4
         with:
           name: debian-packages
           path: dist/*.deb
           if-no-files-found: error
 
+      - name: Create GitHub Release and Attach Packages
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*.deb
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
