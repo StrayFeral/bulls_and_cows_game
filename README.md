@@ -1,62 +1,63 @@
 # BULLS AND COWS GAME
-Command-line and PyQt implementation of the classic "Bulls and Cows" game (yes, that same old game we all played in high-school with pen and paper).
+Terminal and PyQt implementations of the classic "Bulls and Cows" game (yes, that same old game we all played in high-school with pen and paper).
 
+## DEPENDENCIES
 
-## COMMAND-LINE VERSION ONLY
-This is if you want to download only the command-line version, because installing the QT version will install both versions.
+- Python 3 (any version)
+- `python3-pyqt6` - required ONLY for the GUI version
 
-Taken directly as is from my python_exercises repository, but I still 
-left it there too to keep the commit history.  
-This version passed black, mypy and flake8.
+## PACKAGES
 
-### INSTALLATION AND RUNNING
-#### INSTALLING ON LINUX: Debian, Ubuntu, Mint or any other Debian derivative
-1. Download the latest DEB package from here
-[https://github.com/StrayFeral/bulls_and_cows_game/tree/main/linux_packages/debian/DEBPACKAGES](https://github.com/StrayFeral/bulls_and_cows_game/tree/main/linux_packages/debian/DEBPACKAGES)
+There are two packages available for download:
 
+- `bulls-and-cows-game_1.0-1_all.deb` - Terminal version
+- `bulls-and-cows-game-qt_1.0-1_all.deb` - Graphical QT6 version
+
+## INSTALLATION (DEBIAN/UBUNTU/ETC)
+
+1. Download the latest DEB packages from the [RELEASES PAGE](https://github.com/StrayFeral/bulls_and_cows_game/releases)
 2. Install. You could use apt or any package manager of your choice  
-`apt install ./bulls-and-cows-game_1.0-1_all.deb`
-
-#### RUN THE GAME
-
-`bulls_and_cows_game`
-
-The .deb package installs a man page as well. Not that anyone needs it, but it's there.
-
-#### INSTALLATION FROM SOURCE
-If you already installed the DEB package, you don't need this.
-
-You only need to download file `bulls_and_cows_game.py`.  
-The rest of the code is not needed for the command-line version.
-
-#### RUN THE GAME FROM SOURCE
-`./bulls_and_cows_game.py`
-
-
-## QT VERSION (version with a GUI)
-Requires PyQt6. This version was created using the Qt Designer 6.4.3.
-
-For this reason, this version passed no black, mypy nor flake8, as 
-in general the PyQt convention totally breaks the general Python 
-styleguide conventions.
-
-### INSTALLATION AND RUNNING
-#### INSTALLING ON LINUX: Debian, Ubuntu, Mint or any other Debian derivative
-DEB package is not yet available - will be available after April 2024.
-
-#### INSTALLING DEPENDENCIES
 
 ```bash
-sudo apt install python3-pyqt6
+apt install ./bulls-and-cows-game_1.0-1_all.deb
+apt install ./bulls-and-cows-game-qt_1.0-1_all.deb
+```
+## RUNNING
+
+```bash
+# Run the terminal version:
+bulls-and-cows-game
+
+# Run the GUI version:
+bulls-and-cows-game-qt
 ```
 
-#### INSTALLATION FROM SOURCE
-1. Download the code. If you don't have git, just download it as a .zip  
-`git clone https://github.com/StrayFeral/bulls_and_cows_game.git`
+> [!TIP]
+> You could run the GUI version from your linux Games menu.
 
-2. Execute  
-`source venv/bin/activate
-python -m pip install -r requirements.txt`
+> [!TIP]
+> Man pages are available for both versions of the game.
 
-#### RUN THE GAME FROM SOURCE
-`./bulls_and_cows_game_qt.py`
+## INSTALLATION FROM SOURCE
+
+For the terminal only version you only need to download file
+`bulls_and_cows_game.py`.  
+
+The GUI version will require the other 3 Python files:
+- `bulls_and_cows_game_qt.py`
+- `game_layout.py`
+- `help_about.py`
+
+> [!TIP]
+> If you install the game from source, don't forget to install the dependency package `python3-pyqt6`!
+
+### RUN THE GAME FROM SOURCE
+
+```bash
+# Terminal version:
+./bulls_and_cows_game.py
+
+# GUI version:
+./bulls_and_cows_game_qt.py
+```
+
