@@ -1,6 +1,11 @@
 # BULLS AND COWS GAME
 
-[![Build and Release Debian Packages](https://github.com/StrayFeral/bulls_and_cows_game/actions/workflows/debian-build.yml/badge.svg)](https://github.com/StrayFeral/bulls_and_cows_game/actions/workflows/debian-build.yml)
+<!-- Badges Section -->
+[![Release](https://img.shields.io/github/v/release/StrayFeral/bulls_and_cows_game?color=blue&logo=debian)](https://github.com/StrayFeral/bulls_and_cows_game/releases/latest)
+![Python 3](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)
+![Qt 6](https://img.shields.io/badge/Qt-6.x-41CD52?logo=qt&logoColor=white)
+![Terminal](https://img.shields.io/badge/Terminal-GNU_Bash-4EAA25?logo=gnubash&logoColor=white)
+![CI Build](https://github.com/StrayFeral/bulls_and_cows_game/actions/workflows/debian-build.yml/badge.svg)
 
 ![Screenshot](screenshots/thumbnail.jpg)
 
