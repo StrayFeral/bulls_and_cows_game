@@ -3,6 +3,7 @@ __pycache__/
 venv/
 *.csv
 *.pl
+*.debhelper
 
 # Debian packaging build output directories & temporary artifacts
 debian/.debhelper/
