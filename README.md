@@ -1,5 +1,7 @@
 # BULLS AND COWS GAME
 
+[![Build and Release Debian Packages](https://github.com/StrayFeral/bulls_and_cows_game/actions/workflows/debian-build.yml/badge.svg)](https://github.com/StrayFeral/bulls_and_cows_game/actions/workflows/debian-build.yml)
+
 ![Screenshot](screenshots/thumbnail.jpg)
 
 Terminal and PyQt implementations of the classic "Bulls and Cows" game (yes, that same old game we all played in high-school with pen and paper).
