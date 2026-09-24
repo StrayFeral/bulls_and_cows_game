@@ -1,0 +1,13 @@
+#!/usr/bin/make -f
+%:
+	dh $@ --with python3
+
+override_dh_auto_install:
+	dh_auto_install
+	# Rename binaries in staging directories to remove .py extensions
+	mv debian/bulls-and-cows-game/usr/bin/bulls_and_cows_game.py \
+	   debian/bulls-and-cows-game/usr/bin/bulls-and-cows-game
+	
+	mv debian/bulls-and-cows-game-qt/usr/bin/bulls_and_cows_game_qt.py \
+	   debian/bulls-and-cows-game-qt/usr/bin/bulls-and-cows-game-qt
+

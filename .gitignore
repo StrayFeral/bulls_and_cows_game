@@ -4,3 +4,19 @@ venv/
 *.csv
 *.pl
 
+# Debian packaging build output directories & temporary artifacts
+debian/.debhelper/
+debian/bulls-and-cows-game/
+debian/bulls-and-cows-game-qt/
+debian/debhelper-build-stamp
+debian/files
+debian/*.log
+debian/*.substvars
+
+# Generated package archives (placed in parent directory by default)
+../*.deb
+../*.buildinfo
+../*.changes
+../*.dsc
+../*.tar.xz
+

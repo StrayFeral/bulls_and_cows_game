@@ -1,0 +1,22 @@
+Source: bulls-and-cows-game
+Section: games
+Priority: optional
+Maintainer: Evgueni Antonov <Evgueni.Antonov@gmail.com>
+Build-Depends: debhelper-compat (= 13), dh-sequence-python3
+Standards-Version: 4.6.2
+Homepage: https://github.com/StrayFeral/bulls_and_cows_game
+
+Package: bulls-and-cows-game
+Architecture: all
+Depends: ${python3:Depends}, ${misc:Depends}
+Suggests: bulls-and-cows-game-qt
+Description: Bulls and Cows classic game (command-line version)
+ Small Python implementation of the classic Bulls and Cows code-breaking 
+ game for the command line.
+
+Package: bulls-and-cows-game-qt
+Architecture: all
+Depends: ${python3:Depends}, ${misc:Depends}, python3-pyqt6
+Suggests: bulls-and-cows-game
+Description: Bulls and Cows classic game (Qt GUI version)
+ Graphical Qt6 implementation of the classic Bulls and Cows game.

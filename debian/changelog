@@ -1,0 +1,6 @@
+bulls-and-cows-game (1.0-1) unstable; urgency=medium
+
+  * Initial release of CLI and Qt versions.
+
+ -- Evgueni Antonov <Evgueni.Antonov@gmail.com>  Thu, 24 Sep 2026 12:00:00 +0000
+
