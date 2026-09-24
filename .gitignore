@@ -13,10 +13,5 @@ debian/files
 debian/*.log
 debian/*.substvars
 
-# Generated package archives (placed in parent directory by default)
-../*.deb
-../*.buildinfo
-../*.changes
-../*.dsc
-../*.tar.xz
+deb/
 

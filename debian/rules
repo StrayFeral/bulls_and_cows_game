@@ -4,9 +4,8 @@
 
 override_dh_install:
 	dh_install
-	# Rename binaries in staging directories after dh_install copies them
-	mv debian/bulls-and-cows-game/usr/bin/bulls_and_cows_game.py \
-	   debian/bulls-and-cows-game/usr/bin/bulls-and-cows-game
+	mv debian/bulls-and-cows-game/usr/games/bulls_and_cows_game.py \
+	   debian/bulls-and-cows-game/usr/games/bulls-and-cows-game
 	
-	mv debian/bulls-and-cows-game-qt/usr/bin/bulls_and_cows_game_qt.py \
-	   debian/bulls-and-cows-game-qt/usr/bin/bulls-and-cows-game-qt
+	mv debian/bulls-and-cows-game-qt/usr/games/bulls_and_cows_game_qt.py \
+	   debian/bulls-and-cows-game-qt/usr/games/bulls-and-cows-game-qt

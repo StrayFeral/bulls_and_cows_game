@@ -1,4 +1,4 @@
-bulls_and_cows_game_qt.py usr/bin/
+bulls_and_cows_game_qt.py usr/games/
 game_layout.py usr/lib/python3/dist-packages/
 help_about.py usr/lib/python3/dist-packages/
-
+debian/bulls-and-cows-game-qt.desktop usr/share/applications/

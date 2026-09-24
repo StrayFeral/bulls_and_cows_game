@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Bulls and Cows
+Comment=Play the classic Bulls and Cows code-breaking game
+Exec=bulls-and-cows-game-qt
+Icon=applications-games
+Terminal=false
+Type=Application
+Categories=Game;LogicGame;Qt;
+
