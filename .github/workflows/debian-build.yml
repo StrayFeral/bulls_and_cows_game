@@ -1,0 +1,49 @@
+name: Build Debian Packages
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+  workflow_dispatch:
+
+jobs:
+  build-deb:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Debian Packaging Tools
+        run: |
+          sudo apt update
+          sudo apt install -y \
+            build-essential \
+            debhelper \
+            dh-python \
+            fakeroot \
+            lintian
+
+      - name: Build Debian Packages
+        run: |
+          # Build binary packages only, without signing
+          dpkg-buildpackage -us -uc -b
+
+      - name: Run Lintian Checks
+        run: |
+          # Audit the generated packages in the parent directory
+          lintian --pedantic ../*.deb
+
+      - name: Organize Artifacts
+        run: |
+          mkdir -p dist
+          cp ../*.deb dist/
+
+      - name: Upload Debian Package Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: debian-packages
+          path: dist/*.deb
+          if-no-files-found: error
+

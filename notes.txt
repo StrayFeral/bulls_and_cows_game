@@ -1,0 +1,10 @@
+# Inspect contents of deb packages
+dpkg-deb -c ../bulls-and-cows-game_1.0-1_all.deb
+dpkg-deb -c ../bulls-and-cows-game-qt_1.0-1_all.deb
+dpkg-deb -I ../bulls-and-cows-game-qt_1.0-1_all.deb
+
+# Test with Lintian
+lintian --pedantic ../*.deb
+
+sudo apt install ../bulls-and-cows-game-qt_1.0-1_all.deb
+sudo apt remove bulls-and-cows-game-qt
