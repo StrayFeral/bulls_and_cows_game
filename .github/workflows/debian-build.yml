@@ -23,11 +23,16 @@ jobs:
         run: |
           sudo apt update
           sudo apt install -y \
+            appstream-util \
             build-essential \
             debhelper \
             dh-python \
             fakeroot \
             lintian
+
+      - name: Validate AppStream Metadata
+        run: |
+          appstream-util validate debian/org.example.bulls_and_cows_game_qt.metainfo.xml
 
       - name: Build Debian Packages
         run: |
