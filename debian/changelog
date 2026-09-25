@@ -1,3 +1,10 @@
+bulls-and-cows-game (1.0-2) unstable; urgency=medium
+
+  * Add AppStream metainfo XML for software center integration.
+  * Update CI workflow to validate AppStream metadata and build releases.
+
+ -- Evgueni Antonov <Evgueni.Antonov@gmail.com>  Fri, 25 Sep 2026 10:00:00 +0000
+
 bulls-and-cows-game (1.0-1) unstable; urgency=medium
 
   * Initial release of CLI and Qt versions.
