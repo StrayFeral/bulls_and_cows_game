@@ -1,3 +1,10 @@
+bulls-and-cows-game (1.0-3) unstable; urgency=medium
+
+  * Initial upload to Debian Mentors for official inclusion (Closes: #1149261).
+  * Configure multi-binary build for CLI and PyQt6 GUI variants.
+
+ -- Evgueni Antonov <Evgueni.Antonov@gmail.com>  Mon, 28 Sep 2026 23:50:00 +0000
+
 bulls-and-cows-game (1.0-2) unstable; urgency=medium
 
   * Add AppStream metainfo XML for software center integration.
