@@ -1,0 +1,1 @@
+extend-diff-ignore = "(^|/)(linux_packages|deb|qt_ui_design|notes\.txt|\.sh)$"
