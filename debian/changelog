@@ -1,3 +1,9 @@
+bulls-and-cows-game (1.0-5) unstable; urgency=medium
+
+  * Fixing lintian complaints.
+
+ -- Evgueni Antonov <Evgueni.Antonov@gmail.com>  Tue, 29 Sep 2026 01:22:00 +0000
+
 bulls-and-cows-game (1.0-4) unstable; urgency=medium
 
   * Fixing lintian complaints.
@@ -23,4 +29,3 @@ bulls-and-cows-game (1.0-1) unstable; urgency=medium
   * Initial release of CLI and Qt versions.
 
  -- Evgueni Antonov <Evgueni.Antonov@gmail.com>  Thu, 24 Sep 2026 12:00:00 +0000
-
