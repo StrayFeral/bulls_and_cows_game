@@ -3,7 +3,7 @@ Section: games
 Priority: optional
 Maintainer: Evgueni Antonov <Evgueni.Antonov@gmail.com>
 Build-Depends: debhelper-compat (= 13), dh-sequence-python3
-Standards-Version: 4.7.0
+Standards-Version: 4.7.4
 Homepage: https://github.com/StrayFeral/bulls_and_cows_game
 Rules-Requires-Root: no
 
@@ -12,7 +12,7 @@ Architecture: all
 Depends: ${python3:Depends}, ${misc:Depends}
 Suggests: bulls-and-cows-game-qt
 Description: Bulls and Cows classic game (command-line version)
- Small Python implementation of the classic Bulls and Cows code-breaking 
+ Small Python implementation of the classic Bulls and Cows code-breaking
  game for the command line.
 
 Package: bulls-and-cows-game-qt
