@@ -5,6 +5,8 @@ Maintainer: Evgueni Antonov <Evgueni.Antonov@gmail.com>
 Build-Depends: debhelper-compat (= 13), dh-sequence-python3
 Standards-Version: 4.7.4
 Homepage: https://github.com/StrayFeral/bulls_and_cows_game
+Vcs-Git: https://github.com/StrayFeral/bulls-and-cows-game.git
+Vcs-Browser: https://github.com/StrayFeral/bulls-and-cows-game
 Rules-Requires-Root: no
 
 Package: bulls-and-cows-game
